@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless and Mobile Networks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .timeline div {
+            background: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .timeline div:hover {
+            background: #bbb;
+        }
+        .timeline-content {
+            display: none;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 3px solid #444;
+        }
+        .quiz {
+            margin-top: 20px;
+        }
+        .quiz button {
+            padding: 10px;
+            background: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .quiz button:hover {
+            background: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleTimeline(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>Wireless and Mobile Networks</header>
+    <nav>
+        <a href="#wifi">Wi-Fi</a>
+        <a href="#cellular">Cellular Networks</a>
+        <a href="#mobility">Mobility</a>
+        <a href="#security">Security Challenges</a>
+        <a href="#future">Future Trends</a>
+    </nav>
+    <div class="container">
+        <h2 id="wifi">Wi-Fi (Wireless LAN)</h2>
+        <p>Wi-Fi allows devices to connect to the internet wirelessly using IEEE 802.11 standards.</p>
+        <table>
+            <tr><th>Standard</th><th>Speed</th><th>Frequency</th></tr>
+            <tr><td>802.11b</td><td>11 Mbps</td><td>2.4 GHz</td></tr>
+            <tr><td>802.11g</td><td>54 Mbps</td><td>2.4 GHz</td></tr>
+            <tr><td>802.11n</td><td>600 Mbps</td><td>2.4/5 GHz</td></tr>
+        </table>
+
+        <h2 id="cellular">Cellular Networks</h2>
+        <div class="timeline">
+            <div onclick="toggleTimeline('gen1')">1G</div>
+            <div id="gen1" class="timeline-content">1G introduced analog voice communication.</div>
+            <div onclick="toggleTimeline('gen2')">2G</div>
+            <div id="gen2" class="timeline-content">2G introduced digital communication and SMS.</div>
+            <div onclick="toggleTimeline('gen3')">3G</div>
+            <div id="gen3" class="timeline-content">3G enabled mobile internet.</div>
+            <div onclick="toggleTimeline('gen4')">4G</div>
+            <div id="gen4" class="timeline-content">4G brought high-speed internet.</div>
+            <div onclick="toggleTimeline('gen5')">5G</div>
+            <div id="gen5" class="timeline-content">5G offers ultra-fast speeds and low latency.</div>
+        </div>
+
+        <h2 id="mobility">Mobility in Networking</h2>
+        <p>Mobility enables seamless connectivity as users move between networks.</p>
+
+        <h2 id="security">Security Challenges</h2>
+        <p>Wireless networks are vulnerable to threats like eavesdropping and unauthorized access.</p>
+
+        <h2 id="future">Future Trends in Wireless and Mobile Networks</h2>
+        <p>Advancements include 6G, AI-driven optimization, and improved IoT connectivity.</p>
+
+        <h2>Quiz</h2>
+        <div class="quiz">
+            <p>What does Wi-Fi stand for?</p>
+            <button onclick="alert('Wi-Fi stands for Wireless Fidelity.')">Show Answer</button>
+        </div>
+    </div>
+    
+<a href="index.html" class="back-button">Back to Main Page</a>
+
+<style>
+    .back-button {
+        display: block;
+        width: 220px;
+        margin: 40px auto;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.2); /* Light transparency for adaptability */
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        backdrop-filter: blur(8px); /* Soft blur effect to blend with different backgrounds */
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle outline */
+        transition: 0.3s ease-in-out;
+    }
+    .back-button:hover {
+        background: rgba(0, 0, 0, 0.4); /* Darker on hover */
+        transform: scale(1.08);
+    }
+</style>
+
+
+    <footer>
+        Website Created by: Lexl Mae R. Dorego
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Matters - Shiela Marie B. Aguilar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+            color: #333;
+        }
+        header {
+            background-color: rgba(255, 105, 180, 0.9);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            background-color: #ffcccb;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+        footer {
+            background-color: rgba(255, 105, 180, 0.9);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showInfo(topic) {
+            let details = {
+                "Importance": "Mental health is just as important as physical health. It affects how we think, feel, and interact with others.",
+                "Common Disorders": "Common mental health disorders include anxiety, depression, bipolar disorder, and schizophrenia.",
+                "How to Cope": "Coping mechanisms include talking to loved ones, seeking therapy, exercising, and practicing mindfulness.",
+                "Seeking Help": "If you're struggling, reach out to a mental health professional or support groups for guidance and assistance."
+            };
+            alert(details[topic]);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Mental Health Matters ❤️
+        <br>
+        <small>by Shiela Marie B. Aguilar</small>
+    </header>
+    <div class="container">
+        <h2>Why Mental Health is Important</h2>
+        <p>Mental health plays a vital role in our overall well-being. Taking care of our mind is just as important as taking care of our body.</p>
+        
+        <div class="section">🌿 Importance of Mental Health <br><button onclick="showInfo('Importance')">Learn More</button></div>
+        <div class="section">🧠 Common Mental Health Disorders <br><button onclick="showInfo('Common Disorders')">Learn More</button></div>
+        <div class="section">💡 How to Cope with Stress <br><button onclick="showInfo('How to Cope')">Learn More</button></div>
+        <div class="section">📞 Seeking Help & Support <br><button onclick="showInfo('Seeking Help')">Learn More</button></div>
+    </div>
+
+<a href="index.html" class="back-button">Back to Main Page</a>
+
+<style>
+    .back-button {
+        display: block;
+        width: 220px;
+        margin: 40px auto;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.2); /* Light transparency for adaptability */
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        backdrop-filter: blur(8px); /* Soft blur effect to blend with different backgrounds */
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle outline */
+        transition: 0.3s ease-in-out;
+    }
+    .back-button:hover {
+        background: rgba(0, 0, 0, 0.4); /* Darker on hover */
+        transform: scale(1.08);
+    }
+</style>
+
+
+    <footer>
+        &copy; 2025 Shiela B. Marie Aguilar | Mental Health Awareness 💖
+    </footer>
+</body>
+</html>

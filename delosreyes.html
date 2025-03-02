@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI Model - Interactive Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            animation: fadeIn 2s;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .layer {
+            width: 80%;
+            max-width: 500px;
+            padding: 15px;
+            margin: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 18px;
+        }
+        .layer:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .creator {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌐 OSI Model - Interactive Guide 🌐</h1>
+    <p>Click on each layer to learn more!</p>
+
+    <div class="container">
+        <div class="layer" onclick="showInfo(7)">7️⃣ Application Layer</div>
+        <div class="layer" onclick="showInfo(6)">6️⃣ Presentation Layer</div>
+        <div class="layer" onclick="showInfo(5)">5️⃣ Session Layer</div>
+        <div class="layer" onclick="showInfo(4)">4️⃣ Transport Layer</div>
+        <div class="layer" onclick="showInfo(3)">3️⃣ Network Layer</div>
+        <div class="layer" onclick="showInfo(2)">2️⃣ Data Link Layer</div>
+        <div class="layer" onclick="showInfo(1)">1️⃣ Physical Layer</div>
+    </div>
+
+    <div id="infoBox" class="info"></div>
+
+<a href="index.html" class="back-button">Back to Main Page</a>
+
+<style>
+    .back-button {
+        display: block;
+        width: 220px;
+        margin: 40px auto;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.2); /* Light transparency for adaptability */
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        backdrop-filter: blur(8px); /* Soft blur effect to blend with different backgrounds */
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle outline */
+        transition: 0.3s ease-in-out;
+    }
+    .back-button:hover {
+        background: rgba(0, 0, 0, 0.4); /* Darker on hover */
+        transform: scale(1.08);
+    }
+</style>
+
+
+    <p class="creator">Created by: KIRSTIN MARIE DE LOS REYES - BSECE 4B</p>
+
+    <script>
+        function showInfo(layer) {
+            let descriptions = {
+                7: "📡 Application Layer: The topmost layer where user interaction happens (e.g., browsers, email clients).",
+                6: "🖥️ Presentation Layer: Handles data format translation, encryption, and compression.",
+                5: "🔗 Session Layer: Manages sessions and maintains connections between devices.",
+                4: "📦 Transport Layer: Ensures data delivery with protocols like TCP and UDP.",
+                3: "🌍 Network Layer: Handles IP addressing and routing of packets across networks.",
+                2: "🔄 Data Link Layer: Deals with MAC addresses and frames, ensuring reliable transmission.",
+                1: "⚡ Physical Layer: The lowest layer, handling raw bits, cables, and wireless signals."
+            };
+
+            let infoBox = document.getElementById("infoBox");
+            infoBox.innerHTML = descriptions[layer];
+            infoBox.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
