@@ -3,74 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSI Model - Interactive Guide</title>
+    <title>Wireless Communications</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            color: white;
-            margin: 0;
+            margin: 40px;
             padding: 20px;
-        }
-        h1 {
-            animation: fadeIn 2s;
+            background-color: #f4f4f4;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        .layer {
-            width: 80%;
-            max-width: 500px;
-            padding: 15px;
-            margin: 5px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s;
-            font-size: 18px;
+        h1, h2 {
+            color: #333;
         }
-        .layer:hover {
-            background: rgba(255, 255, 255, 0.5);
-            transform: scale(1.05);
-        }
-        .info {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .creator {
-            margin-top: 20px;
-            font-size: 14px;
-            opacity: 0.8;
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
-
-    <h1>🌐 OSI Model - Interactive Guide 🌐</h1>
-    <p>Click on each layer to learn more!</p>
-
     <div class="container">
-        <div class="layer" onclick="showInfo(7)">7️⃣ Application Layer</div>
-        <div class="layer" onclick="showInfo(6)">6️⃣ Presentation Layer</div>
-        <div class="layer" onclick="showInfo(5)">5️⃣ Session Layer</div>
-        <div class="layer" onclick="showInfo(4)">4️⃣ Transport Layer</div>
-        <div class="layer" onclick="showInfo(3)">3️⃣ Network Layer</div>
-        <div class="layer" onclick="showInfo(2)">2️⃣ Data Link Layer</div>
-        <div class="layer" onclick="showInfo(1)">1️⃣ Physical Layer</div>
+        <h1>Wireless Communications</h1>
+        <p><strong>Created by: Kirstin Marie De Los Reyes BSECE 4B</strong></p>
+        
+        <h2>Introduction</h2>
+        <p>Wireless communication is the transmission of data without the use of physical connections like wires or cables. It relies on electromagnetic waves, such as radio waves, to transmit signals between devices. This technology has revolutionized how people communicate, enabling mobile phones, Wi-Fi, satellite communication, and more.</p>
+        
+        <h2>History of Wireless Communications</h2>
+        <p>The development of wireless communication began in the 19th century with the discovery of electromagnetic waves by James Clerk Maxwell and their experimental validation by Heinrich Hertz. Guglielmo Marconi is credited with inventing the first wireless telegraph in the late 1890s, which laid the foundation for modern wireless technologies.</p>
+        
+        <h2>Types of Wireless Communication</h2>
+        <ul>
+            <li><strong>Radio Communication:</strong> Used in AM/FM radios, walkie-talkies, and emergency services.</li>
+            <li><strong>Microwave Communication:</strong> Used for satellite links, long-distance phone calls, and radar.</li>
+            <li><strong>Infrared Communication:</strong> Found in remote controls and short-range data transmission.</li>
+            <li><strong>Bluetooth:</strong> A short-range technology for wireless peripherals like headphones and smart devices.</li>
+            <li><strong>Wi-Fi:</strong> A widely used technology for high-speed internet access.</li>
+            <li><strong>Cellular Networks:</strong> Used for mobile communication, including 3G, 4G, and 5G networks.</li>
+            <li><strong>Satellite Communication:</strong> Essential for global broadcasting, GPS, and space exploration.</li>
+        </ul>
+        
+        <h2>Wireless Communication Technologies</h2>
+        <p>Modern wireless communications rely on several technologies:</p>
+        <ul>
+            <li><strong>GSM (Global System for Mobile Communications):</strong> A standard for mobile phones.</li>
+            <li><strong>CDMA (Code Division Multiple Access):</strong> A digital cellular network technology.</li>
+            <li><strong>LTE (Long-Term Evolution):</strong> Provides high-speed mobile internet.</li>
+            <li><strong>5G:</strong> The latest generation of cellular networks offering ultra-fast speeds and low latency.</li>
+            <li><strong>IoT (Internet of Things):</strong> Uses wireless networks to connect smart devices.</li>
+        </ul>
+        
+        <h2>Applications of Wireless Communications</h2>
+        <p>Wireless communication is used in various fields:</p>
+        <ul>
+            <li><strong>Telecommunications:</strong> Mobile phones, VoIP, and satellite phones.</li>
+            <li><strong>Internet Access:</strong> Wi-Fi and mobile broadband.</li>
+            <li><strong>Healthcare:</strong> Remote patient monitoring, wearable health devices.</li>
+            <li><strong>Military and Defense:</strong> Secure radio communications and drone operations.</li>
+            <li><strong>Transportation:</strong> GPS navigation, vehicle-to-vehicle communication.</li>
+            <li><strong>Smart Cities:</strong> Wireless sensors for traffic management and security.</li>
+        </ul>
+        
+        <h2>Advantages of Wireless Communication</h2>
+        <ul>
+            <li>Enables mobility and remote access.</li>
+            <li>Reduces infrastructure costs.</li>
+            <li>Supports high-speed communication.</li>
+            <li>Enhances emergency response and disaster recovery.</li>
+        </ul>
+        
+        <h2>Challenges in Wireless Communication</h2>
+        <ul>
+            <li>Interference from other signals.</li>
+            <li>Security risks, including hacking and data breaches.</li>
+            <li>Limited bandwidth and network congestion.</li>
+            <li>High energy consumption in some applications.</li>
+        </ul>
+        
+        <h2>Future of Wireless Communication</h2>
+        <p>Wireless communication is constantly evolving. The rollout of 5G is expected to revolutionize industries with faster speeds and lower latency. Research is also being conducted on 6G, which could introduce AI-driven networks and advanced quantum communication. Additionally, the expansion of IoT and smart cities will continue to rely on wireless technology for automation and connectivity.</p>
+        
+        <h2>Conclusion</h2>
+        <p>Wireless communication has transformed how people interact and access information. From early radio signals to cutting-edge 5G networks, this technology has connected the world in ways previously unimaginable. As innovations continue, wireless communication will play an even greater role in shaping the future.</p>
     </div>
-
-    <div id="infoBox" class="info"></div>
 
 <a href="index.html" class="back-button">Back to Main Page</a>
 
@@ -96,27 +117,6 @@
         transform: scale(1.08);
     }
 </style>
-
-
-    <p class="creator">Created by: KIRSTIN MARIE DE LOS REYES - BSECE 4B</p>
-
-    <script>
-        function showInfo(layer) {
-            let descriptions = {
-                7: "📡 Application Layer: The topmost layer where user interaction happens (e.g., browsers, email clients).",
-                6: "🖥️ Presentation Layer: Handles data format translation, encryption, and compression.",
-                5: "🔗 Session Layer: Manages sessions and maintains connections between devices.",
-                4: "📦 Transport Layer: Ensures data delivery with protocols like TCP and UDP.",
-                3: "🌍 Network Layer: Handles IP addressing and routing of packets across networks.",
-                2: "🔄 Data Link Layer: Deals with MAC addresses and frames, ensuring reliable transmission.",
-                1: "⚡ Physical Layer: The lowest layer, handling raw bits, cables, and wireless signals."
-            };
-
-            let infoBox = document.getElementById("infoBox");
-            infoBox.innerHTML = descriptions[layer];
-            infoBox.style.display = "block";
-        }
-    </script>
 
 </body>
 </html>
