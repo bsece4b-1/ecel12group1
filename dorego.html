@@ -9,19 +9,21 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffcc80;
+            color: black;
         }
         header {
-            background-color: #333;
+            background-color: #ff6600;
             color: white;
             text-align: center;
             padding: 15px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #cc5500;
             padding: 10px;
         }
         nav a {
@@ -30,80 +32,46 @@
             padding: 10px 20px;
             margin: 0 10px;
             transition: background 0.3s;
+            font-weight: bold;
         }
         nav a:hover {
-            background-color: #666;
+            background-color: #ff3300;
         }
         .container {
             padding: 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
         h2 {
-            color: #333;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        tr:hover {
-            background-color: #ddd;
-        }
-        .timeline div {
-            background: #ddd;
-            margin: 5px 0;
-            padding: 10px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .timeline div:hover {
-            background: #bbb;
-        }
-        .timeline-content {
-            display: none;
-            padding: 10px;
-            background: #f9f9f9;
-            border-left: 3px solid #444;
-        }
-        .quiz {
-            margin-top: 20px;
+            color: #ff3300;
+            font-weight: bold;
         }
         .quiz button {
             padding: 10px;
-            background: #444;
+            background: #ff6600;
             color: white;
             border: none;
             cursor: pointer;
             transition: background 0.3s;
+            font-weight: bold;
         }
         .quiz button:hover {
-            background: #666;
+            background: #cc4400;
         }
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #333;
+            background-color: #ff6600;
             color: white;
             margin-top: 20px;
+            font-weight: bold;
         }
     </style>
     <script>
-        function toggleTimeline(id) {
-            var content = document.getElementById(id);
-            if (content.style.display === "none") {
-                content.style.display = "block";
-            } else {
-                content.style.display = "none";
-            }
+        function showAnswer(answer) {
+            alert(answer);
         }
     </script>
 </head>
@@ -111,51 +79,67 @@
     <header>Wireless and Mobile Networks</header>
     <nav>
         <a href="#wifi">Wi-Fi</a>
-        <a href="#cellular">Cellular Networks</a>
         <a href="#mobility">Mobility</a>
         <a href="#security">Security Challenges</a>
         <a href="#future">Future Trends</a>
+        <a href="#quiz">Quiz</a>
     </nav>
     <div class="container">
         <h2 id="wifi">Wi-Fi (Wireless LAN)</h2>
-        <p>Wi-Fi allows devices to connect to the internet wirelessly using IEEE 802.11 standards.</p>
-        <table>
-            <tr><th>Standard</th><th>Speed</th><th>Frequency</th></tr>
-            <tr><td>802.11b</td><td>11 Mbps</td><td>2.4 GHz</td></tr>
-            <tr><td>802.11g</td><td>54 Mbps</td><td>2.4 GHz</td></tr>
-            <tr><td>802.11n</td><td>600 Mbps</td><td>2.4/5 GHz</td></tr>
+        <p>Wi-Fi (Wireless Fidelity) is a wireless networking technology that allows devices to connect to the internet or a local area network (LAN) without physical cables. It operates on IEEE 802.11 standards and can function on different frequency bands, primarily 2.4 GHz and 5 GHz. The latest standard, Wi-Fi 6, enhances network efficiency, speed, and device capacity, ensuring a more seamless and stable connection.</p>
+        <table border="1" width="100%" cellpadding="5">
+            <tr>
+                <th>Wi-Fi Standard</th>
+                <th>Frequency Band</th>
+                <th>Maximum Speed</th>
+            </tr>
+            <tr>
+                <td>Wi-Fi 4 (802.11n)</td>
+                <td>2.4 GHz / 5 GHz</td>
+                <td>600 Mbps</td>
+            </tr>
+            <tr>
+                <td>Wi-Fi 5 (802.11ac)</td>
+                <td>5 GHz</td>
+                <td>3.5 Gbps</td>
+            </tr>
+            <tr>
+                <td>Wi-Fi 6 (802.11ax)</td>
+                <td>2.4 GHz / 5 GHz</td>
+                <td>9.6 Gbps</td>
+            </tr>
         </table>
-
-        <h2 id="cellular">Cellular Networks</h2>
-        <div class="timeline">
-            <div onclick="toggleTimeline('gen1')">1G</div>
-            <div id="gen1" class="timeline-content">1G introduced analog voice communication.</div>
-            <div onclick="toggleTimeline('gen2')">2G</div>
-            <div id="gen2" class="timeline-content">2G introduced digital communication and SMS.</div>
-            <div onclick="toggleTimeline('gen3')">3G</div>
-            <div id="gen3" class="timeline-content">3G enabled mobile internet.</div>
-            <div onclick="toggleTimeline('gen4')">4G</div>
-            <div id="gen4" class="timeline-content">4G brought high-speed internet.</div>
-            <div onclick="toggleTimeline('gen5')">5G</div>
-            <div id="gen5" class="timeline-content">5G offers ultra-fast speeds and low latency.</div>
-        </div>
-
+        
         <h2 id="mobility">Mobility in Networking</h2>
-        <p>Mobility enables seamless connectivity as users move between networks.</p>
+        <p>Mobility in networking refers to the ability of devices and users to move freely across different networks while maintaining continuous and stable connectivity. This is achieved through various mobility management techniques such as Mobile IP (MIP), handover mechanisms in cellular networks, and seamless roaming in Wi-Fi environments. Technologies like 5G and network slicing further enhance mobile connectivity by dynamically allocating resources based on user needs.</p>
 
         <h2 id="security">Security Challenges</h2>
-        <p>Wireless networks are vulnerable to threats like eavesdropping and unauthorized access.</p>
+        <p>Wireless networks, due to their open nature, face several security vulnerabilities. Common threats include eavesdropping, man-in-the-middle (MITM) attacks, denial-of-service (DoS) attacks, and weak encryption protocols. To safeguard wireless communication, modern security measures such as WPA3 encryption, VPNs, and intrusion detection systems (IDS) should be implemented.</p>
 
         <h2 id="future">Future Trends in Wireless and Mobile Networks</h2>
-        <p>Advancements include 6G, AI-driven optimization, and improved IoT connectivity.</p>
+        <p>Wireless networks are continuously evolving, shaping the future of communication. Some emerging trends include:</p>
+        <ul>
+            <li><strong>6G Networks</strong> – Expected to provide ultra-fast speeds up to 1 Tbps with near-zero latency.</li>
+            <li><strong>AI-Driven Networking</strong> – AI will automate network optimization, enhancing efficiency and security.</li>
+            <li><strong>IoT Expansion</strong> – A massive increase in smart devices interconnected through wireless networks.</li>
+            <li><strong>Quantum Communication</strong> – Revolutionary encryption methods ensuring unbreakable security.</li>
+        </ul>
 
-        <h2>Quiz</h2>
+        <h2 id="quiz">Quiz</h2>
         <div class="quiz">
-            <p>What does Wi-Fi stand for?</p>
-            <button onclick="alert('Wi-Fi stands for Wireless Fidelity.')">Show Answer</button>
+            <p>1. What does Wi-Fi stand for?</p>
+            <button onclick="showAnswer('Wi-Fi stands for Wireless Fidelity.')">Show Answer</button>
+            <p>2. What frequency bands does Wi-Fi commonly use?</p>
+            <button onclick="showAnswer('Wi-Fi operates on 2.4 GHz and 5 GHz bands.')">Show Answer</button>
+            <p>3. What is the latest Wi-Fi standard as of now?</p>
+            <button onclick="showAnswer('Wi-Fi 6 (802.11ax) is the latest standard.')">Show Answer</button>
+            <p>4. What security protocol is recommended for securing Wi-Fi networks?</p>
+            <button onclick="showAnswer('WPA3 is currently the most secure Wi-Fi protocol.')">Show Answer</button>
+            <p>5. What mobile technology enables seamless connectivity while moving?</p>
+            <button onclick="showAnswer('Mobile IP and handover mechanisms enable mobility.')">Show Answer</button>
         </div>
     </div>
-    
+
 <a href="index.html" class="back-button">Back to Main Page</a>
 
 <style>
@@ -180,7 +164,6 @@
         transform: scale(1.08);
     }
 </style>
-
 
     <footer>
         Website Created by: Lexl Mae R. Dorego
