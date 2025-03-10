@@ -3,69 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Matters - Shiela Marie B. Aguilar</title>
+    <title>TCP/IP Adventures - Explore the Network World</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
-            color: #333;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #f0f0f0;
         }
         header {
-            background-color: rgba(255, 105, 180, 0.9);
-            color: white;
-            padding: 20px;
-            font-size: 24px;
+            background-color: #1e3c72;
+            padding: 30px;
+            font-size: 28px;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #fff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 20px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
         .section {
-            background-color: #ffcccb;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 8px;
+            background-color: #2a5298;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
             font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.05);
         }
         button {
-            background-color: #ff4081;
-            color: white;
+            background-color: #ff9800;
+            color: #fff;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin-top: 10px;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         button:hover {
-            background-color: #d81b60;
+            background-color: #e68900;
+            transform: scale(1.1);
         }
         footer {
-            background-color: rgba(255, 105, 180, 0.9);
-            color: white;
-            padding: 10px;
+            background-color: #1e3c72;
+            color: #fff;
+            padding: 15px;
             font-size: 14px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
     </style>
     <script>
         function showInfo(topic) {
-            let details = {
-                "Importance": "Mental health is just as important as physical health. It affects how we think, feel, and interact with others.",
-                "Common Disorders": "Common mental health disorders include anxiety, depression, bipolar disorder, and schizophrenia.",
-                "How to Cope": "Coping mechanisms include talking to loved ones, seeking therapy, exercising, and practicing mindfulness.",
-                "Seeking Help": "If you're struggling, reach out to a mental health professional or support groups for guidance and assistance."
+            const details = {
+                "TCP/IP Adventure": "TCP/IP, or Transmission Control Protocol/Internet Protocol, is the set of rules that governs how data is sent and received across networks. It's the backbone of the Internet, ensuring devices can communicate effectively. Think of it like the universal language that all networked devices understand.",
+                "TCP vs UDP": "TCP (Transmission Control Protocol) ensures that data packets are delivered in order and without errors. It's like sending a certified letter that requires confirmation of receipt. UDP (User Datagram Protocol) is faster but doesn't guarantee delivery or order, like sending a postcard. Depending on the application, one may be more suitable than the other.",
+                "IP Address Quest": "An IP (Internet Protocol) address is a unique identifier for a device on a network, like a postal address for data packets. It helps data find the correct destination. IPv4 addresses look like 192.168.1.1, while IPv6 addresses look like 2001:0db8:85a3:0000:0000:8a2e:0370:7334.",
+                "Layered Network Challenge": "TCP/IP operates across four layers: Application, Transport, Internet, and Link. Each layer has a specific role—like preparing the data, ensuring it travels safely, finding the right destination, and managing the physical connection. This layered approach simplifies troubleshooting and development."
             };
             alert(details[topic]);
         }
@@ -73,18 +77,16 @@
 </head>
 <body>
     <header>
-        Mental Health Matters ❤️
-        <br>
-        <small>by Shiela Marie B. Aguilar</small>
+        🚀 TCP/IP Adventures - Explore the Network World 🌐
     </header>
     <div class="container">
-        <h2>Why Mental Health is Important</h2>
-        <p>Mental health plays a vital role in our overall well-being. Taking care of our mind is just as important as taking care of our body.</p>
+        <h2>Unlock the Secrets of TCP/IP</h2>
+        <p>Join us on an interactive journey through the fundamental concepts of TCP/IP that power modern communication.</p>
         
-        <div class="section">🌿 Importance of Mental Health <br><button onclick="showInfo('Importance')">Learn More</button></div>
-        <div class="section">🧠 Common Mental Health Disorders <br><button onclick="showInfo('Common Disorders')">Learn More</button></div>
-        <div class="section">💡 How to Cope with Stress <br><button onclick="showInfo('How to Cope')">Learn More</button></div>
-        <div class="section">📞 Seeking Help & Support <br><button onclick="showInfo('Seeking Help')">Learn More</button></div>
+        <div class="section">🌍 TCP/IP Adventure <br><button onclick="showInfo('TCP/IP Adventure')">Start Journey</button></div>
+        <div class="section">⚔️ TCP vs UDP Showdown <br><button onclick="showInfo('TCP vs UDP')">Join the Battle</button></div>
+        <div class="section">🗺️ IP Address Quest <br><button onclick="showInfo('IP Address Quest')">Begin Quest</button></div>
+        <div class="section">🎯 Layered Network Challenge <br><button onclick="showInfo('Layered Network Challenge')">Take the Challenge</button></div>
     </div>
 
 <a href="index.html" class="back-button">Back to Main Page</a>
@@ -112,9 +114,8 @@
     }
 </style>
 
-
     <footer>
-        &copy; 2025 Shiela B. Marie Aguilar | Mental Health Awareness 💖
+        &copy; 2025 Network Explorers | Your Guide to Data Journeys 🌐
     </footer>
 </body>
 </html>
